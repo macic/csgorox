@@ -1,0 +1,1 @@
+from csgorox.settings import *
