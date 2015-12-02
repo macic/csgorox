@@ -11,3 +11,6 @@ local_settings.py
 /dist/
 coverage/
 .coverage
+/bin/
+/include/
+/lib/
