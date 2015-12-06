@@ -9,4 +9,5 @@ urlpatterns = [
 
     url(r'^$', views.index, name='index'),
     url(r'^deposit/', views.view_that_asks_for_money, name='view_that_asks_for_money'),
+    url(r'^something/', include('paypal.standard.ipn.urls')),
 ]

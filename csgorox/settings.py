@@ -107,7 +107,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 TEMPLATE_DIRS = (
-    os.path.join(BASE_DIR,  'templates'),
+    os.path.join(BASE_DIR, 'letsbet/templates'),
 )
 
-PAYPAL_RECEIVER_EMAIL = 'nikit0re-facilitator@tlen.pl'
+PAYPAL_RECEIVER_EMAIL = 'paulina.putin-facilitator@wp.pl'
