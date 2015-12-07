@@ -1,6 +1,6 @@
 from django.conf.urls import include, url
 from django.contrib import admin
-
+import csgorox.settings as settings
 from . import views
 urlpatterns = [
     # Examples:

@@ -3,6 +3,7 @@ from django.shortcuts import render
 from django.core.urlresolvers import reverse
 from paypal.standard.forms import PayPalPaymentsForm
 from csgorox.settings import PAYPAL_RECEIVER_EMAIL
+from django.conf import settings
 
 def index(request):
     return HttpResponse("Hello, world. You're at the csgorox.com index.")
