@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSGOrox.com {% block subtitle %}- main page{% endblock %}</title>
+    {% load staticfiles %}
+    <link href="{% static "css/bootstrap.css" %}" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="{% static "js/bootstrap.min.js" %}"></script>
+</head>
+<body>
+<div class="container">
+    <!-- Typography
+      ================================================== -->
+    <div class="bs-docs-section">
+
+        <!-- Headings -->
+
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="bs-component">
+                    <h1>CSGORox.com</h1>
+                   <!-- <p class="lead">Ultimate eSports betting system</p> -->
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="bs-component">&nbsp;
+                    <a href="#" class="btn btn-warning">Register now!</a>
+                </div>
+
+            </div>
+            <div class="col-lg-4">
+                <div class="bs-component">
+                    <div class="form-group">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-addon">&nbsp;</span>
+                            <input type="text" placeholder="your@email.cs" class="form-control input-sm" name="email">
+                            <span class="input-group-addon">pw</span>
+                            <input type="password" placeholder="password" class="form-control input-sm" name="password">
+                            <span class="input-group-btn">
+                              <button class="btn btn-default" type="button">Log in</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    {% block content %}{% endblock %}
+</div>
+</body>
+</html>

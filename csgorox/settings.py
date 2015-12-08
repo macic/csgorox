@@ -38,7 +38,6 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'letsbet',
-    'paypal.standard.ipn',
 )
 
 MIDDLEWARE_CLASSES = (
