@@ -1,3 +1,22 @@
 .correct-top {
     margin-top: 15px;
 }
+.adjust-navbar li {
+    margin: 12px 15px 0 0;
+}
+.adjust-navbar-margin {
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+}
+.adjust-navbar-padding {
+    padding: 5px 15px !important;
+}
+.adjust-from-navbar {
+    margin-top: 90px;
+}
+.keep-color:focus,
+.keep-color.focus,
+.keep-color:hover,
+.keep-color.hover {
+    color: #ffffff !important;
+}
