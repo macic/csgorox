@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CSGOrox.com {% block subtitle %}- main page{% endblock %}</title>
     {% load staticfiles %}
-    <link href="{% static "css/bootstrap_flatly.css" %}" rel="stylesheet" type="text/css"/>
+    <link href="{% static "css/bootstrap_paper.css" %}" rel="stylesheet" type="text/css"/>
     <link href="{% static "css/custom.css" %}" rel="stylesheet" type="text/css"/>
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="{% static "js/bootstrap.min.js" %}"></script>
@@ -25,11 +25,11 @@
         </div>
         <div class="navbar-collapse collapse" id="navbar-main">
             <ul class="nav navbar-nav navbar-right adjust-navbar">
-                <li><input class="form-control input-sm" name="email" placeholder="my@email.cs" type="text"
+                <li><input class="form-control input-sm keep-white" name="email" placeholder="my@email.cs" type="text"
                            id="inputSmall"></li>
-                <li><input class="form-control input-sm" name="password" placeholder="password" type="text"
+                <li><input class="form-control input-sm keep-white" name="password" placeholder="password" type="password"
                            id="inputSmall"></li>
-                <li><a href="#" class="btn btn-success btn-sm adjust-navbar-padding keep-color">Log in</a></li>
+                <li><a href="#" class="btn btn-primary  btn-sm adjust-navbar-padding keep-color">Log in</a></li>
                 <li><a href="#" class="btn btn-warning btn-sm adjust-navbar-padding keep-color">SIGN UP</a></li>
             </ul>
         </div>

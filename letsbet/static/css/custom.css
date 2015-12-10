@@ -20,3 +20,43 @@
 .keep-color.hover {
     color: #ffffff !important;
 }
+.keep-white {
+    color: #ffffff !important;
+}
+.tbl-col-5 {
+    width: 5%;
+}
+.tbl-col-10 {
+    width: 10%;
+}
+.tbl-col-15 {
+    width: 15%;
+}
+.tbl-col-20 {
+    width: 20%;
+}
+.tbl-col-25 {
+    width: 25%;
+}
+.tbl-col-30 {
+    width: 30%;
+}
+.tbl-col-35 {
+    width: 35%;
+}
+.tbl-col-40 {
+    width: 40%;
+}
+
+.btn-pick {
+    float: left;
+    overflow: hidden;
+    width: 100%;
+    text-align: left;
+}
+.btn-odds {
+    float: right;
+}
+.btn-additional-bets {
+    text-align: center !important;
+}
