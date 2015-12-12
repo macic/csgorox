@@ -25,10 +25,8 @@
         </div>
         <div class="navbar-collapse collapse" id="navbar-main">
             <ul class="nav navbar-nav navbar-right adjust-navbar">
-                <li><input class="form-control input-sm keep-white" name="email" placeholder="my@email.cs" type="text"
-                           id="inputSmall"></li>
-                <li><input class="form-control input-sm keep-white" name="password" placeholder="password" type="password"
-                           id="inputSmall"></li>
+                <li><input class="form-control input-sm keep-white" name="email" placeholder="my@email.cs" type="text"></li>
+                <li><input class="form-control input-sm keep-white" name="password" placeholder="password" type="password"></li>
                 <li><a href="#" class="btn btn-primary  btn-sm adjust-navbar-padding keep-color">Log in</a></li>
                 <li><a href="#" data-toggle="modal" data-target="#signup" class="btn btn-warning btn-sm adjust-navbar-padding keep-color">SIGN UP</a></li>
             </ul>
@@ -36,21 +34,107 @@
     </div>
 </div>
 <div class="modal fade" id="signup" role="dialog">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Sign Up</h4>
-        </div>
-        <div class="modal-body">
-          <p>This is a large modal.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
+    <form class="form-horizontal">
+        <fieldset>
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="well bs-component">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <legend>Sign up</legend>
+
+                            <div class="form-group">
+                                <label for="registration_email" class="col-lg-2 control-label">Email</label>
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control" id="registration_email" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPassword" class="col-lg-2 control-label">Password</label>
+                                <div class="col-lg-10">
+                                    <input type="password" class="form-control" id="inputPassword"
+                                           placeholder="Password">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPassword2" class="col-lg-2 control-label">Retype password</label>
+                                <div class="col-lg-10">
+                                    <input type="password" class="form-control" id="inputPassword2"
+                                           placeholder="Retype password">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-lg-2 control-label">Radios</label>
+
+                                <div class="col-lg-10">
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"
+                                                   checked="">
+                                            Option one is this
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="optionsRadios" id="optionsRadios2"
+                                                   value="option2">
+                                            Option two can be something else
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="select" class="col-lg-2 control-label">Selects</label>
+
+                                <div class="col-lg-10">
+                                    <select class="form-control" id="select">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                    <br>
+                                    <select multiple="" class="form-control">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-lg-10 col-lg-offset-2">
+                                    <button type="reset" class="btn btn-default">Cancel</button>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <p><input class="form-control input-sm" name="name" placeholder="First Name" type="text"></p>
+
+                        <p><input class="form-control input-sm" name="surname" placeholder="Surname" type="text"></p>
+
+                        <p><input class="form-control input-sm" name="registration_email" placeholder="Email address"
+                                  type="text"></p>
+
+                        <p><input class="form-control input-sm" name="password1" placeholder="Password" type="password">
+                        </p>
+
+                        <p><input class="form-control input-sm" name="password2" placeholder="Retype password"
+                                  type="password"></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</div>
 <div class="container adjust-from-navbar">
     {% block content %}{% endblock %}
 </div>
