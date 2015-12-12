@@ -25,29 +25,51 @@
 }
 .tbl-col-5 {
     width: 5%;
+        float: left;padding: 8px;
 }
 .tbl-col-10 {
     width: 10%;
+        float: left;padding: 8px;
 }
 .tbl-col-15 {
     width: 15%;
+        float: left;padding: 8px;
 }
 .tbl-col-20 {
     width: 20%;
+        float: left;padding: 8px;
 }
 .tbl-col-25 {
     width: 25%;
+        float: left;padding: 8px;
 }
 .tbl-col-30 {
     width: 30%;
+        float: left;padding: 8px;
 }
 .tbl-col-35 {
     width: 35%;
+        float: left;padding: 8px;
 }
 .tbl-col-40 {
     width: 40%;
+        float: left;
+    padding: 8px;
 }
-
+.tbl-col-80 {
+    width: 80%;
+        float: left;
+    padding: 8px;
+}
+.tbl-col-100 {
+    width: 100%;
+    float: left;
+}
+.tbl-col-100-for-table {
+    width: 100%;
+    float: left;
+    border-top: 1px solid #dddddd;
+}
 .btn-pick {
     float: left;
     overflow: hidden;
@@ -59,4 +81,49 @@
 }
 .btn-additional-bets {
     text-align: center !important;
+}
+.bet {
+    width: 100%;
+    float: left;
+    line-height: 100%;
+    border-bottom: 1px solid #dddddd;
+    margin-bottom: 16px;
+}
+.bet-name {
+    width: 100%;
+    float: left;
+    font-size: 14px;
+}
+.bet-name a {
+    float: right;
+}
+.bet-remove {
+    width: 30%;
+    float: right;
+}
+.bet-remove a {
+    text-align: right;
+}
+.bet-pick {
+    width: 100%;
+    float: left;
+    overflow: hidden;
+    font-weight: bold;
+}
+.bet-odds {
+    float: right;
+}
+.input-bet {
+    width: 30%;
+    float: right;
+    text-align: right;
+}
+.bet-place-bet {
+    width: 42%;
+    float: right;
+}
+.logo {
+    position: relative;
+    top: -8px;
+    left: -4px;
 }

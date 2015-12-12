@@ -16,7 +16,7 @@
 <div class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <div class="navbar-header adjust-navbar-margin">
-            <a href="./" class="navbar-brand">CS:GOrox.com</a>
+            <a href="./" class="navbar-brand"><img class="logo" src="{% static "img/csgorox.png" %}" alt="CS:GO ROX ultimate betting"/></a>
             <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -30,12 +30,27 @@
                 <li><input class="form-control input-sm keep-white" name="password" placeholder="password" type="password"
                            id="inputSmall"></li>
                 <li><a href="#" class="btn btn-primary  btn-sm adjust-navbar-padding keep-color">Log in</a></li>
-                <li><a href="#" class="btn btn-warning btn-sm adjust-navbar-padding keep-color">SIGN UP</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#signup" class="btn btn-warning btn-sm adjust-navbar-padding keep-color">SIGN UP</a></li>
             </ul>
         </div>
     </div>
 </div>
-
+<div class="modal fade" id="signup" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Sign Up</h4>
+        </div>
+        <div class="modal-body">
+          <p>This is a large modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 <div class="container adjust-from-navbar">
     {% block content %}{% endblock %}
 </div>
